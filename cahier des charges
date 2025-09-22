@@ -1,0 +1,41 @@
+🎨 Palette de couleurs (base bleue)
+
+Bleu principal (CTA / accent) : #1E88E5 (Bleu électrique, moderne)
+
+Bleu foncé (header / footer) : #0D47A1 (Bleu profond, inspire confiance)
+
+Gris clair (fond sections) : #F5F5F5 (fond neutre pour lisibilité)
+
+Gris moyen (texte secondaire) : #616161
+
+Blanc : #FFFFFF (fond principal, respiration)
+
+Jaune/orangé (accent secondaire) : #FFC107 (rappel énergie / électricité ⚡, utilisé en petite touche)
+
+👉 Exemple d’utilisation :
+
+Header et footer : bleu foncé
+
+Boutons principaux (Réserver / Appeler) : bleu principal
+
+Hover boutons : bleu plus foncé ou jaune accent
+
+Arrière-plans de sections : blanc + gris clair en alternance
+
+Icônes d’électricité : jaune/orangé
+
+✍️ Typographies
+
+Pour un site vitrine d’artisan, il faut lisibilité + modernité. Je recommande Google Fonts (gratuit, facile à intégrer).
+
+Titre (Hero, sections, CTA) : Poppins (sans-serif, moderne et pro)
+
+Texte courant : Roboto (sans-serif, très lisible)
+
+👉 Exemple :
+
+Titres H1, H2 : Poppins Bold
+
+Paragraphes : Roboto Regular
+
+Boutons : Poppins Semi-Bold, en majuscules
