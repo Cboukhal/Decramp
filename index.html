@@ -13,64 +13,141 @@
     <title></title>
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <a href="./index.html" aria-label="Retour à l'accueil"><img src="./asset/image/" alt="logo du site"></a>
+<body>
+
+  <!-- 🔝 HEADER -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo SECIC">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="professionnels.html">Professionnels</a></li>
+        <li><a href="particuliers.html">Particuliers</a></li>
+        <li><a href="liens.html">Liens</a></li>
+        <li><a href="note.html">Note</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+      <!-- 🏠 ACCUEIL -->
+  <section class="hero">
+    <h1>Accueil</h1>
+    <p>Thierry Decramp - SECIC - Artisan électricien</p>
+    <p>Électricien depuis plus de 15 ans, spécialisé dans les nouvelles technologies et respectueux des normes.</p>
+  </section>
+
+  <!-- 👪 PARTICULIERS -->
+  <section>
+    <h2>Particuliers</h2>
+    <div class="section-content">
+      <p>Mise en conformité installation, tableaux électriques, chauffage électrique, dépannages, domotique, alarme et contrôle d’accès...</p>
+      <div class="gallery">
+        <div class="item">
+          <img src="exemple1.jpg" alt="Exemple 1">
+          <p>Exemple 1</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./index.html">Professionels</a></li>
-                <li><a href="./index.html">Particuliers</a></li>
-            </ul>
-            <ul>
-                <li><a href="./index.html">Lien/Témoignages</a></li>
-                <li><a href="./index.html">Rendez-vous</a></li>
-                <li><a href="./index.html">Contact/Commentaire</a></li>
-            </ul>
-        </nav>
-        <div class="burger">
-            <span></span>
+        <div class="item">
+          <img src="exemple2.jpg" alt="Exemple 2">
+          <p>Exemple 2</p>
         </div>
-    </header>
-    <main>
-        <section class="baniere">
-            <div class="text">
-                <h1></h1>
-                <p></p>
-                <a href="" class="btn" aria-label=""></a>
-            </div>
-        </section>
-        <h2 id=""></h2>
-                <section class="">
-                    <aside class="">
-                        
-                    </aside>
-                </section>
-    </main>
-    <footer>
-        <table>
-            <tr>
-                <td>
-                    <h3>Plan du site</h3>
-                        <ul>
-                            <li></a></li>
-                        </ul>
-                </td>
-                <td>
-                    <h3>RGPD</h3>
-                        <ul>
-                            <li><a href="">Mention légale</a></li>
-                            <li><a href="">Politique de confidetialité</a></li>
-                            <li><a href="">CGU</a></li>
-                            <li><a href="">Politique des cookies</a></li>
-                            <li><a href="">Accessibilité</a></li>
-                        </ul>
-                </td>
-            </tr>
-        </table>
-        <p>&#169; . Tous droits réservés.</p>
-    </footer>
+        <div class="item">
+          <img src="exemple3.jpg" alt="Exemple 3">
+          <p>Exemple 3</p>
+        </div>
+      </div>
+      <br>
+      <a href="particuliers.html" class="btn">En savoir plus</a>
+    </div>
+  </section>
+
+  <!-- 🧰 PROFESSIONNELS -->
+  <section>
+    <h2>Professionnels</h2>
+    <div class="section-content">
+      <p>Réalisation de travaux suivant les rapports de conformité, câblages électriques et informatiques, maintenance machines outils, câblages pour automatismes, alimentations électriques, installations électriques dans les usines, appareils d’éclairage, ...</p>
+      <div class="gallery">
+        <div class="item">
+          <img src="pro1.jpg" alt="Exemple 1">
+          <p>Exemple 1</p>
+        </div>
+        <div class="item">
+          <img src="pro2.jpg" alt="Exemple 2">
+          <p>Exemple 2</p>
+        </div>
+        <div class="item">
+          <img src="pro3.jpg" alt="Exemple 3">
+          <p>Exemple 3</p>
+        </div>
+      </div>
+      <br>
+      <a href="professionnels.html" class="btn">En savoir plus</a>
+    </div>
+  </section>
+
+  <!-- ⭐ ÉVALUATION -->
+  <section class="eval">
+    <h2>Évaluer nos services</h2>
+    <p>"Besoin d’un électricien ? Obtenez votre devis" <br> Cliquez sur le bouton :</p>
+    <a href="note.html" class="btn">Évaluer</a>
+  </section>
+
+  <!-- 📞 CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <div class="contact-wrapper">
+        
+        <!-- 📍 Carte -->
+        <div class="contact-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999656174543!2d2.292292615674324!3d48.85837307928744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdfdfdfdfdf%3A0xfdfdfdfdfdfdfdf!2sAdresse!5e0!3m2!1sfr!2sfr!4v0000000000000"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- 📬 Formulaire -->
+        <div class="contact-form">
+          <p><strong>Adresse :</strong> 67 rue du Charme</p>
+          <p><strong>Téléphone :</strong> 01 XX XX XX XX</p>
+          <form action="#" method="post">
+            <input type="text" name="nom" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="sujet" placeholder="Sujet">
+            <textarea name="message" placeholder="Message" required></textarea>
+            <!-- reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="VOTRE_CLE_SITE"></div>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <!-- 🦶 FOOTER -->
+  <footer>
+    <div class="sitemap">
+      <a href="index.html">Accueil</a>
+      <a href="professionnels.html">Professionnels</a>
+      <a href="particuliers.html">Particuliers</a>
+      <a href="liens.html">Liens</a>
+      <a href="note.html">Note</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>© SECIC 2025. Tous droits réservés.</p>
+    <p>
+      <a href="#">RGPD</a> | 
+      <a href="#">Mentions légales</a> | 
+      <a href="#">Politique de confidentialité</a> | 
+      <a href="#">CGU</a> | 
+      <a href="#">Politique des cookies</a> | 
+      <a href="#">Accessibilité</a>
+    </p>
+  </footer>
     <script src="./asset/Js/jquery-3.7.1.min.js"></script>
     <script src="./asset/Js/script.js"></script>
 </body>

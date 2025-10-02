@@ -1,398 +1,241 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    color: black;
-    font-family: "Poppins", Times, serif;
-}
-p{
-    font-family:"Roboto", Times, sans-serif;
-    color: #616161;
-}
-/* .parallax{
-    height: 500px;
-    background: url(../image/cuisinier.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: -300px;
-    background-attachment: fixed;
-} */
-/*--------------------------HEADER--------------------------*/
-header{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #0D47A1;
-    height: 80px;
-    /* border-bottom: 2px solid ; */
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-}
-header #logo{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-#logo img{
-    /* height: 60px; */
-    /* width: 60px; */
-}
-#logo p{
-    font-size: 1.5em;
-    color: black;
-    margin: 10px;
-}
-/* ---------------------------------*/
-
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-nav ul li{
-    list-style: none;
-    padding: 20px;
-}
-nav ul li a:hover{
-    text-decoration: none;
-    /* color: goldenrod; */
-    font-size: 1.2em;
-}
-nav ul li a:hover{
-    /* color: goldenrod; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
-/*--------------------------Baniere--------------------------*/
-.baniere{
-    position: relative;
-    text-align: center;
-}
-#slider img{
-    /* width: 100%;
-    height: 80vh;
-    position: absolute;
-    left: 0; */
-    /* -------------- */
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-    z-index: 0;
-}
-.text{
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%);
-}
-.text h1{
-    font-size: 4em;
-    color: whitesmoke;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-.text p{
-    font-size: 2em;
-    margin: 10px;
-}
-.text .btn{
-    margin-top: 20px;
-}
-.btn{
-    display: inline-block;
-    padding: 1em 1.5em;
-    /* background-color: goldenrod; */
-    font-size: clamp(1em, 2.5vw, 1.2em); /* taille responsive */
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    max-width: 100%;
-    word-wrap: break-word;
-    white-space: normal;
-    line-height: 1.4;
-    font-weight: 500;
-}
-.btn:hover{
-    /* background-color: whitesmoke; */
-    /* color: goldenrod; */
-    translate: 0.5s;
-}
-#slider span{
-    position: absolute;
-    font-size: 6em;
-    color: black;
-    z-index: 10;
-    top: 250px;
-    cursor: pointer;
-}
-#sgauche{
-    left: 5%;
-}
-#sdroite{
-    left: 90%;
-}
-.decal{
-    height: 85vh;
-}
-/*--------------------------Contact--------------------------*/
-.contact{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: beige;
-    padding: 50px;
-    position: relative;
-}
-.contact aside{
-    width: 45%;
-}
-.contact iframe{
-    width: 100%;
-    height: 600px;
-    border: 0;
-}
-.contact table{
-    width: 100%;
-}
-.contact input{
-    width: 100%;
-    height: 30px;
-    padding-bottom: 10px;
-}
-.contact textarea{
-    width: 100%;
-    height: 140px;
-    resize: none;
-}
-.contact img{
-    border-radius: 50%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-#envoie{
-    padding-bottom: 30px;
-    width: 30%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-.reussite{
-    width: 150px;
-    background-color: burlywood;
-    color: darkred;
-    position: absolute;
-    font-size: 1.5em;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-}
-/*--------------------------Footer--------------------------*/
-footer{
-    background-color: #0D47A1;
-    padding: 50px;
-    margin-top: 100px;
-}
-footer table{
-    width: 100%;
-    text-align: center;
-}
-h3{
-    font-size: 2.5em;
-    color: #FFFFFF;
-}
-footer ul li{
-    list-style: none;
-    padding: 7px;
-}
-footer ul li a {
-    font-size: 1.2em;
-    color: black;
-    text-decoration: none;
-}
-footer ul li a:hover{
-    /* color: goldenrod; */
-}
-footer p{
-    text-align: center;
-    color: black;
-    font-size: 1.4em;
-}
-/*--------------------------Responsive--------------------------*/
-/*--------------------------Burger--------------------------*/
-@media screen and (max-width:900px) {
-    .burger{
-        display: block;
-    }
-    nav{
-        position: absolute;
-        display: block;
-        background-color: beige;
-        border: 2px solid goldenrod;
-        color: goldenrod;
-        top: 80px;
-        padding: 40px;
-        width: 60%;
-        z-index: 20;
-        right: -100%;
-        transition: 1s ease-in-out;
-    }
-    nav ul{
-        display: block;
-        text-align: center;
-    }
-    .baniere h1{
-        font-size: 3em;
-        padding: 50px;
-    }
-    /* ------------------- */
-    .apropos,
-    .menus,
-    .equipe,
-    .reservation,
-    .contact {
-        flex-direction: column;
-        padding: 20px;
-    }
-    .menu,
-    .bloc {
-        width: 100%;
-    }
-    .galerie-grid {
-    grid-template-columns: 1fr;
-    }
-    .reservation aside,
-    .contact aside {
-    width: 100%;
-    }
-    .contact td {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .contact img {
-        max-width: 80px;
-        margin: 0 auto;
-    }
+/* Couleurs principales */
+:root {
+  --primary: #007bff; /* bleu principal */
+  --secondary: #0056b3; /* bleu foncé */
+  --background: #f9f9f9;
+  --text: #333;
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-/* ----------- FORMULAIRE D'INSCRIPTION ----------- */
-form {
-  max-width: 600px;
-  margin: 100px auto; /* centré avec marge sous le header */
-  padding: 30px;
-  background-color: #fffbea;
-  border: 2px solid goldenrod;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+/* 🌟 Structure générale */
+body {
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-form table {
+/* 🔝 Header */
+header {
+  background: var(--secondary);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+header img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* 🏠 Section Accueil */
+.hero {
+  background: url('image-ampoules.jpg') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* 📘 Titres de section */
+section h2 {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.4em;
+}
+
+/* 🔹 Section contenu (Particuliers, Professionnels) */
+.section-content {
+  padding: 20px;
+  background-color: white;
+}
+
+.section-content p {
+  margin-bottom: 20px;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* 🖼️ Galerie d'exemples */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery .item {
+  width: 200px;
+  text-align: center;
+}
+
+.gallery img {
   width: 100%;
-  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-form td {
-  padding: 10px;
-  vertical-align: top;
+/* 🔘 Boutons */
+.btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s;
+  text-align: center;
 }
 
-form label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
-  color: #333;
+.btn:hover {
+  background-color: var(--secondary);
 }
 
-form label span {
-  color: crimson;
+/* ⭐ Évaluation */
+.eval {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: white;
 }
 
-form input,
-form select {
-  width: 100%;
+.eval p {
+  margin: 10px 0 20px 0;
+}
+
+/* 📍 Contact */
+.contact {
+  background-color: white;
+  padding: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.contact input,
+.contact textarea {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: 1em;
-  transition: border 0.3s;
-}
-
-form input:focus,
-form select:focus {
-  border: 1px solid goldenrod;
-  outline: none;
-  box-shadow: 0 0 5px rgba(218,165,32,0.5);
-}
-
-form input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-form input[type="submit"] {
   width: 100%;
-  padding: 12px;
-  margin-top: 20px;
-  background-color: goldenrod;
+}
+
+.contact textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact button {
+  background-color: var(--primary);
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 1.1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-form input[type="submit"]:hover {
-  background-color: #cfa62b;
-}
-
-form p {
-  text-align: center;
-  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
   font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-form p a {
-  color: goldenrod;
-  font-weight: bold;
+.contact button:hover {
+  background-color: var(--secondary);
+}
+
+/* 🗺️ Map + Formulaire côte à côte */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-map {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* 📜 Footer */
+footer {
+  background-color: var(--secondary);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: white;
   text-decoration: none;
 }
 
-form p a:hover {
+footer a:hover {
   text-decoration: underline;
 }
 
-/* Messages d’erreurs */
-form span {
-  /* display: block; */
-  margin-top: 5px;
-  font-size: 0.9em;
-  color: crimson !important;
+/* 🧭 Plan du site */
+footer .sitemap {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
-.liste_user td {
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-/* Alternance de lignes */
-.liste_user tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* Hover */
-.liste_user tr:hover {
-  background-color: #f1f5f9;
+  .contact-wrapper {
+    flex-direction: column;
+  }
 }
