@@ -14,10 +14,14 @@
 </head>
 
 <body>
-  <!-- HEADER -->
+  <!--HEADER -->
   <header>
     <div class="logo">
       <img src="./asset/image/logo.png" alt="Logo SECIC">
+    </div>
+    <!--Burger-->
+    <div class="burger">
+        <span></span>
     </div>
     <nav>
       <ul>
@@ -50,17 +54,32 @@
     <h2>Section Commentaire</h2>
       <div class="contact-wrapper">
         <div class="contact-form">
-          <form action="#" method="post">
-            <label for="nom">Nom (optionnel) :</label>
-            <input type="text" id="nom" name="nom">
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-            <label for="note">Note :</label>
-            <div class="stars" style="font-size: 22px; color: white;">★★★★★</div>
-            <label for="commentaire">Commentaire :</label>
-            <textarea id="commentaire" name="commentaire" required></textarea>
-            <button type="submit" class="btn">Envoyer</button>
-          </form>
+           <form id="commentForm" action="#" method="post">
+                    <label for="nom">Nom (optionnel) :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                    
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    
+                    <label for="note">Note :</label>
+                    <div class="stars-container">
+                        <div class="stars" id="starRating">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                        <span class="rating-text" id="ratingText">Choisissez une note</span>
+                    </div>
+                    <input type="hidden" id="note-value" name="note" value="0">
+                    <span class="error-message" id="errorMessage">Veuillez sélectionner une note</span>
+                    
+                    <label for="commentaire">Commentaire :</label>
+                    <textarea id="commentaire" name="commentaire" required placeholder="Partagez votre expérience..."></textarea>
+                    
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
         </div>
       </div>
   </section>
@@ -74,28 +93,28 @@
     <!-- Témoignage 1 -->
     <div class="prestation">
       <p><span style="font-size:20px; color:gold;">★★★★★</span> 
-      <img src="icone-calendrier.png" alt="Calendrier" style="height:20px; vertical-align:middle; margin-right:5px;"> 
+      <br>
       <strong>10 mai 2024</strong><br>
       “Très professionnel et rapide” – Client A</p>
-      <img src="exemple1.jpg" alt="Exemple 1" style="width:180px; margin-top:10px; border-radius:5px;">
+      <img src="./asset/image/exemple1.webp" alt="Exemple 1" style="width:180px; margin-top:10px; border-radius:5px;">
     </div>
 
     <!-- Témoignage 2 -->
     <div class="prestation">
       <p><span style="font-size:20px; color:gold;">★★★★★</span> 
-      <img src="icone-calendrier.png" alt="Calendrier" style="height:20px; vertical-align:middle; margin-right:5px;"> 
+        <br>
       <strong>25 avril 2024</strong><br>
       “Travail soigné, devis clair” – Client B</p>
-      <img src="exemple2.jpg" alt="Exemple 2" style="width:180px; margin-top:10px; border-radius:5px;">
+      <img src="./asset/image/exemple1.webp" alt="Exemple 2" style="width:180px; margin-top:10px; border-radius:5px;">
     </div>
 
     <!-- Témoignage 3 -->
     <div class="prestation">
       <p><span style="font-size:20px; color:gold;">★★★★★</span> 
-      <img src="icone-calendrier.png" alt="Calendrier" style="height:20px; vertical-align:middle; margin-right:5px;"> 
+        <br>
       <strong>12 juin 2024</strong><br>
       “Bonne communication, dépannage efficace” – Client C</p>
-      <img src="exemple3.jpg" alt="Exemple 3" style="width:180px; margin-top:10px; border-radius:5px;">
+      <img src="./asset/image/exemple1.webp" alt="Exemple 3" style="width:180px; margin-top:10px; border-radius:5px;">
     </div>
   </section>
 
