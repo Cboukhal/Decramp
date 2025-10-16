@@ -54,34 +54,73 @@ nav ul li a:hover {
 /*Section Accueil */
 .hero {
   position: relative;
-  text-align: center;
-  color: white;
-  padding: 80px 20px;
-  height: 400px;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../image/ampoule2.jpg') center/cover no-repeat;
-  transition: background-image 0.8s ease-in-out;
+  color: white;
+  text-align: center;
 }
 
-/* Fond sombre en bas du texte */
+/* Images du slider */
+#slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ✅ Fond noir semi-transparent sur toute la bannière */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45); /* opacité ajustable */
   z-index: 1;
 }
 
-/* Texte */
+/* Texte au-dessus du fond */
 .hero-overlay {
   position: relative;
   z-index: 2;
-  max-width: 600px;
+  max-width: 700px;
+  padding: 20px;
 }
 
-/* Boutons ronds (changement d’image) */
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Bouton */
+.hero .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #eaeaea;
+  transform: scale(1.05);
+}
+
+/* Points en haut à droite */
 .hero-dots {
   position: absolute;
   top: 20px;
@@ -106,15 +145,6 @@ nav ul li a:hover {
 
 .hero-dots .dot.active {
   background-color: rgba(255, 255, 255, 0.9);
-}
-
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2em;
 }
 
 

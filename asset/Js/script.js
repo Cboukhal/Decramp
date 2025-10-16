@@ -1,60 +1,32 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const images = [
-    'image/ampoule2.jpg',   // index 0
-    'image/ampoule1.jpg',  // index 1
-    'image/ampoule3.jpg'    // index 2
-  ];
+$(document).ready(() => {
+    // ============= SLIDER =============
+    let images = $('#slider img');
+    let dots = $('.dot');
+    let nbrSlides = images.length;
+    let imageActive = 0;
+    
+    // Affiche la première image
+    images.eq(imageActive).fadeIn(500);
 
-  // éléments
-  const hero = document.querySelector('.hero');
-  const bgCurrent = document.querySelector('.hero-bg-current');
-  const bgNext = document.querySelector('.hero-bg-next');
-  const dots = document.querySelectorAll('.hero-dots .dot');
-
-  // sécurité
-  if (!bgCurrent || !bgNext || dots.length === 0) {
-    console.error('Hero elements missing.');
-    return;
+    // Fonction pour changer d’image
+  function showSlide(index) {
+    images.fadeOut(500);
+    images.eq(index).fadeIn(500);
+    dots.removeClass('active');
+    dots.eq(index).addClass('active');
   }
 
-  // précharge images
-  images.forEach(src => {
-    const img = new Image();
-    img.src = src;
+  // Quand on clique sur un point
+  dots.click(function() {
+    imageActive = $(this).data('index');
+    showSlide(imageActive);
   });
 
-  let currentIndex = 0;
-  // initialise background initial
-  bgCurrent.style.backgroundImage = `url('${images[currentIndex]}')`;
-  bgNext.style.backgroundImage = `url('${images[(currentIndex + 1) % images.length]}')`;
-
-  function showImage(index) {
-    if (index === currentIndex) return; // rien à faire
-    // place l'image cible dans bgNext
-    bgNext.style.backgroundImage = `url('${images[index]}')`;
-    // amener bgNext au premier plan
-    bgNext.style.opacity = '1';
-
-    // après la transition, swap des classes / calques
-    setTimeout(() => {
-      // mettre bgCurrent à l'image sélectionnée et remettre bgNext invisible
-      bgCurrent.style.backgroundImage = `url('${images[index]}')`;
-      bgNext.style.opacity = '0';
-      currentIndex = index;
-    }, 800); // durée identique à la transition CSS
-  }
-
-  // gestion des dots
-  dots.forEach(dot => {
-    dot.addEventListener('click', (e) => {
-      const idx = parseInt(dot.dataset.index, 10);
-      // mise à jour visuelle des dots
-      dots.forEach(d => d.classList.remove('active'));
-      dot.classList.add('active');
-      // change d'image
-      showImage(idx);
-    });
-  });
+  // Slide automatique toutes les 10 secondes
+  setInterval(() => {
+    imageActive = (imageActive + 1) % nbrSlides;
+    showSlide(imageActive);
+  }, 10000);
 
     // ============= BURGER - À L'INTÉRIEUR DE READY =============
     const burger = document.querySelector('.burger');
