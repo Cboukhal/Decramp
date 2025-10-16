@@ -688,6 +688,11 @@ nav ul li a:hover {
     display: block;
   }
 
+  .hero p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  }
+
   /* Cacher le nav par défaut sur mobile */
   nav {
     position: absolute; /* Changed from absolute to fixed */
