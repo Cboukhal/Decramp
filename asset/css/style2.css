@@ -31,10 +31,26 @@ header {
 }
 
 /* ✅ Logo plus petit et bien centré */
+.logo {
+  display: flex;
+  align-items: center;   /* Aligne verticalement le logo et le texte */
+  gap: 8px;              /* Petit espace entre logo et texte */
+  color: white;
+  font-weight: 500;
+}
+
 .logo img {
-  height: 45px;       /* Taille réduite du logo */
-  width: auto;        /* Garde le bon ratio d'image */
+  height: 40px;          /* Taille ajustée */
+  width: auto;
   display: block;
+}
+
+.logo-text {
+  line-height: 1.2;      /* Resserre les lignes pour un effet compact */
+  font-size: 0.95rem;    /* Taille de texte harmonieuse à côté du logo */
+  background-color: #F5F5F5;
+  color: #000000;
+  padding: 3px 10px;
 }
 
 nav ul {
