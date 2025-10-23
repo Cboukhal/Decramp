@@ -34,7 +34,7 @@ header {
 .logo {
   display: flex;
   align-items: center;   /* Aligne verticalement le logo et le texte */
-  gap: 8px;              /* Petit espace entre logo et texte */
+  gap: 1px;              /* Petit espace entre logo et texte */
   color: white;
   font-weight: 500;
 }
@@ -48,9 +48,9 @@ header {
 .logo-text {
   line-height: 1.2;      /* Resserre les lignes pour un effet compact */
   font-size: 0.95rem;    /* Taille de texte harmonieuse à côté du logo */
-  background-color: #F5F5F5;
+  background-color: white;
   color: #000000;
-  padding: 3px 10px;
+  padding: 2px 3px;
 }
 
 nav ul {

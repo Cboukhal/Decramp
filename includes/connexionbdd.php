@@ -16,7 +16,7 @@
         fclose($fichier);
     }
 
-    $dbname = 'EveilDesSens_Camil';
+    $dbname = 'Thierry Decramp_Artisan électricien';
     try{
         $connexion = new PDO("mysql:host=$server;dbname=$dbname", $username, $password);
         $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
