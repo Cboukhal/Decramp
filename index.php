@@ -33,7 +33,7 @@
             <h1>Accueil</h1>
             <p>Thierry Decramp - SECIC - Artisan électricien</p>
             <p>Électricien depuis plus de 15 ans, spécialisé dans les nouvelles technologies et respectueux des normes.</p>
-            <a href="contact.html" class="btn">Contact</a>
+            <a href="contact.php" class="btn">Contact</a>
         </div>
 
   <!-- Les points de navigation -->
@@ -61,7 +61,7 @@
             </div>
             </div>
             <br>
-            <a href="particuliers.html" class="btn">En savoir plus</a>
+            <a href="particuliers.php" class="btn">En savoir plus</a>
         </div>
     </section>
 
@@ -85,7 +85,7 @@
             </div>
             </div>
             <br>
-            <a href="professionnels.html" class="btn">En savoir plus</a>
+            <a href="professionnels.php" class="btn">En savoir plus</a>
         </div>
     </section>
 
@@ -94,7 +94,7 @@
         <h2>Évaluer nos services</h2>
         <div class="section-content">
         <p>"Besoin d’un électricien ? Obtenez votre devis" <br> Cliquez sur le bouton :</p>
-        <a href="commentaire.html" class="btn">Évaluer</a>
+        <a href="commentaire.php" class="btn">Évaluer</a>
         </div>
     </section>
 
