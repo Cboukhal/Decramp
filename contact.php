@@ -14,14 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/favicon" href="./asset/image/OIP.webp">
-    <title>Liens</title>
+    <title>Contact</title>
 </head>
 <body>
     <?php
         include "./includes/header.php";
     ?>
     <main>
-     <!-- 🏠 ACCUEIL -->
+    <!-- 🏠 ACCUEIL -->
 <section class="hero">
   <div id="slider">
     <img src="./asset/image/ampoule.jpg" alt="ampoule">
@@ -30,10 +30,9 @@
   </div>
 
   <div class="hero-overlay">
-    <h1>Liens</h1>
+    <h1>Contact</h1>
     <p>Thierry Decramp - SECIC - Artisan électricien</p>
     <p>Électricien depuis plus de 15 ans, spécialisé dans les nouvelles technologies et respectueux des normes.</p>
-    <a href="contact.php" class="btn">Contact</a>
   </div>
 
   <!-- Les points de navigation -->
@@ -44,38 +43,41 @@
   </div>
 </section>
 
-  <!-- 🔹 INTRODUCTION -->
+  <!-- ⏰ SECTION HORAIRES -->
   <section class="presentation">
-    <h3>Introduction</h3>
-    <blockquote>"Découvrez nos partenaires, réalisations et retours clients"</blockquote>
+    <h3>Section Horaires</h3>
+    <blockquote>Lundi - Vendredi 8h/18h, Urgences 24/7</blockquote>
   </section>
 
-  <!-- 🔹 SECTION LIENS -->
-  <section class="prestations">
-    <h3>Section Liens</h3>
+  <!-- 📍 SECTION CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <div class="contact-wrapper">
+        
+        <!--Carte -->
+        <!-- <div class="contact-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999656174543!2d2.292292615674324!3d48.85837307928744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdfdfdfdfdf%3A0xfdfdfdfdfdfdfdf!2sAdresse!5e0!3m2!1sfr!2sfr!4v0000000000000"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div> -->
 
-    <div class="prestation">
-      <h4>Daffy Électricité</h4>
-      <p>Entreprise de dépannages et d’installations en électricité et contrôle d’accès, antennes, réseaux, spécialisée dans les copropriétés.</p>
-      <a href="#" class="btn">Lien</a>
-    </div>
+        <!--Formulaire -->
+        <div class="contact-form">
+          <p><strong>Adresse :</strong> 67 rue du Charme</p>
+          <p><strong>Téléphone :</strong> 01 XX XX XX XX</p>
+          <form action="#" method="post">
+            <input type="text" name="nom" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="sujet" placeholder="Sujet">
+            <textarea name="message" placeholder="Message" required></textarea>
+            <!-- Widget reCAPTCHA v2 -->
+            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+            <button type="submit" class="btn">Envoyer</button>
+          </form>
+        </div>
 
-    <div class="prestation">
-      <h4>Qualifelec</h4>
-      <p>Bien choisir une entreprise d’électricité, un électricien. Vous cherchez un prestataire pour une installation électrique ou une rénovation ?</p>
-      <a href="#" class="btn">Lien</a>
-    </div>
-
-    <div class="prestation">
-      <h4>Promotelec</h4>
-      <p>Association créée en 1962 pour promouvoir la sécurité et la qualité des installations électriques dans le bâtiment. Elle regroupe tous les acteurs du secteur.</p>
-      <a href="#" class="btn">Lien</a>
-    </div>
-
-    <div class="prestation">
-      <h4>FFD Domotique</h4>
-      <p>Fédération à but non lucratif dédiée à la domotique. Elle s’adresse à tous les acteurs : électricité, énergie, sécurité, télécoms, automatisme, etc.</p>
-      <a href="#" class="btn">Lien</a>
+      </div>
     </div>
   </section>
     </main>
@@ -84,5 +86,6 @@
     ?>  
     <script src="./asset/Js/jquery-3.7.1.min.js"></script>
     <script src="./asset/Js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
