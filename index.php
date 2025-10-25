@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./asset/css/style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/favicon" href="./asset/image/title.png">
+    <link rel="icon" type="image/favicon" href="./asset/image/OIP.webp">
     <title>Accueil</title>
 </head>
 <body>
@@ -33,7 +33,7 @@
             <h1>Accueil</h1>
             <p>Thierry Decramp - SECIC - Artisan électricien</p>
             <p>Électricien depuis plus de 15 ans, spécialisé dans les nouvelles technologies et respectueux des normes.</p>
-            <a href="contact.html" class="btn">Contact</a>
+            <a href="contact.php" class="btn">Contact</a>
         </div>
 
   <!-- Les points de navigation -->
@@ -61,7 +61,7 @@
             </div>
             </div>
             <br>
-            <a href="particuliers.html" class="btn">En savoir plus</a>
+            <a href="particuliers.php" class="btn">En savoir plus</a>
         </div>
     </section>
 
@@ -85,7 +85,7 @@
             </div>
             </div>
             <br>
-            <a href="professionnels.html" class="btn">En savoir plus</a>
+            <a href="professionnels.php" class="btn">En savoir plus</a>
         </div>
     </section>
 
@@ -94,7 +94,7 @@
         <h2>Évaluer nos services</h2>
         <div class="section-content">
         <p>"Besoin d’un électricien ? Obtenez votre devis" <br> Cliquez sur le bouton :</p>
-        <a href="commentaire.html" class="btn">Évaluer</a>
+        <a href="commentaire.php" class="btn">Évaluer</a>
         </div>
     </section>
 
@@ -112,20 +112,24 @@
             </div> -->
 
             <!--Formulaire -->
-            <div class="contact-form">
-            <p><strong>Adresse :</strong> 67 rue du Charme</p>
-            <p><strong>Téléphone :</strong> 01 XX XX XX XX</p>
-            <form action="#" method="post">
-                <input type="text" name="nom" placeholder="Nom" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="text" name="sujet" placeholder="Sujet">
-                <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit" class="btn">Envoyer</button>
-            </form>
+            <div class="contact">
+                <div class="contact-wrapper">
+                    <!--Formulaire -->
+                    <div class="contact-form">
+                        <p><strong>Adresse :</strong> 67 rue du Charme</p>
+                        <p><strong>Téléphone :</strong> 01 XX XX XX XX</p>
+                        <form action="./contact.php" method="post">
+                            <input type="text" name="nom" placeholder="Nom" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="text" name="sujet" placeholder="Sujet" required>
+                            <textarea name="message" placeholder="Message" required></textarea>
+                            <!-- Widget reCAPTCHA v2 -->
+                            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                            <button type="submit" name="envoie" value="1" class="btn">Envoyer</button>
+                        </form>
+                    </div>
+              </div>
             </div>
-
-        </div>
-        </div>
     </section>
     </main>
     <?php
@@ -133,5 +137,6 @@
     ?>  
     <script src="./asset/Js/jquery-3.7.1.min.js"></script>
     <script src="./asset/Js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

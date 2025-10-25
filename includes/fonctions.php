@@ -211,48 +211,45 @@
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
 function envoyerMail($objet, $destinataire, $contenu){
-    //Import PHPMailer classes into the global namespace
-    //These must be at the top of your script, not inside a function
-    //Load Composer's autoloader (created by composer, not included with PHPMailer)
-    require 'vendor/autoload.php';
+    //Load Composer's autoloader
+    require_once 'vendor/autoload.php';
 
     //Create an instance; passing `true` enables exceptions
     $mail = new PHPMailer(true);
 
     try {
         //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-        $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'formateur6c@gmail.com';                     //SMTP username
-        $mail->Password   = 'eokj vdts xbmk zhfa';                               //SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-        $mail->Port       = 465;    //465 pour du SSL 587 pour du TLS
+        // ⚠️ CORRECTION 1 : Désactiver le debug (sinon headers already sent)
+        $mail->SMTPDebug = 0;  // 0 = pas de sortie, 2 = debug complet
+        
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'boukhalfa.camil@gmail.com';
+        $mail->Password   = 'tapb owiq qrwl uosw';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port       = 465;
+        
+        // ⚠️ CORRECTION 2 : Encodage UTF-8 pour les accents
+        $mail->CharSet = 'UTF-8';
 
-        //expediteur
-        $mail->setFrom('formateur6c@gmail.com', 'Formateur 6C');
-        //destinataire
-        $mail->addAddress($destinataire);     //Add a recipient
-  
-        // $mail->addReplyTo('info@example.com', 'Information');
-        // $mail->addCC('cc@example.com'); //copie carbonne
-        // $mail->addBCC('bcc@example.com'); //copie cachée
-
-        //Attachments
-        // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-        // $mail->addAttachment('./docs/img1.jpg', 'imagetest.jpg');    //Optional name
+        //Expéditeur
+        $mail->setFrom('boukhalfa.camil@gmail.com', 'Boukhalfa Camil');
+        
+        //Destinataire
+        $mail->addAddress($destinataire);
 
         //Content
-        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->isHTML(true);
         $mail->Subject = $objet;
         $mail->Body    = $contenu;
-        $mail->AltBody = '';
+        $mail->AltBody = strip_tags($contenu); // Version texte brut
 
         $mail->send();
         return 1;
     } catch (Exception $e) {
-        // echo "Erreur. Mailer Error: {$mail->ErrorInfo}";
+        // Logger l'erreur au lieu de l'afficher
+        error_log("Erreur PHPMailer: {$mail->ErrorInfo}");
         return 0;
     }
 }

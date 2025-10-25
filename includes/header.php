@@ -15,12 +15,12 @@
     <?php
         echo "
         <ul>
-            <li><a href='index.html'>Accueil</a></li>
-            <li><a href='professionnels.html'>Professionnels</a></li>
-            <li><a href='particuliers.html'>Particuliers</a></li>
-            <li><a href='liens.html'>Liens</a></li>
-            <li><a href='commentaire.html'>Commentaire</a></li>
-            <li><a href='contact.html'>Contact</a></li>
+            <li><a href='index.php'>Accueil</a></li>
+            <li><a href='professionnels.php'>Professionnels</a></li>
+            <li><a href='particuliers.php'>Particuliers</a></li>
+            <li><a href='liens.php'>Liens</a></li>
+            <li><a href='commentaire.php'>Commentaire</a></li>
+            <li><a href='contact.php'>Contact</a></li>
         </ul>";
     ?>
     </nav>
