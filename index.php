@@ -112,6 +112,7 @@
             </div> -->
 
             <!--Formulaire -->
+<<<<<<< HEAD
             <div class="contact">
                 <div class="contact-wrapper">
                     <!--Formulaire -->
@@ -129,6 +130,20 @@
                         </form>
                     </div>
               </div>
+=======
+            <div class="contact-form">
+            <p><strong>Adresse :</strong> 67 rue du Charme</p>
+            <p><strong>Téléphone :</strong> 01 XX XX XX XX</p>
+            <form action="#" method="post">
+                <input type="text" name="nom" placeholder="Nom" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="sujet" placeholder="Sujet">
+                <textarea name="message" placeholder="Message" required></textarea>
+                <!-- Widget reCAPTCHA v2 -->
+                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+>>>>>>> 53da9ef443ce151f752b5c154ab37ea74debb5df
             </div>
     </section>
     </main>

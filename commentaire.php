@@ -1,5 +1,6 @@
 <?php
     session_start();
+<<<<<<< HEAD
     date_default_timezone_set('Europe/Paris');
     
     // Traitement du formulaire
@@ -263,20 +264,31 @@
         error_log("Erreur récupération commentaires : " . $e->getMessage());
         $commentaires = [];
     }
+=======
+>>>>>>> 53da9ef443ce151f752b5c154ab37ea74debb5df
 ?>
 <!------------------------------------------------------------------------------>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Laissez votre avis sur nos services">
     <meta name="keywords" content="avis, commentaires, notes, témoignages">
     <meta name="author" content="Thierry Decramp">
+=======
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+>>>>>>> 53da9ef443ce151f752b5c154ab37ea74debb5df
     <link rel="stylesheet" href="./asset/css/style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/favicon" href="./asset/image/OIP.webp">
+<<<<<<< HEAD
     <title>Commentaires - Thierry Decramp</title>
     <style>
         .alert {
@@ -440,6 +452,115 @@
     
     <?php include "./includes/footer.php"; ?>
     
+=======
+    <title>Commentaire</title>
+</head>
+<body>
+    <?php
+        include "./includes/header.php";
+    ?>
+    <main>
+    <!--ACCUEIL -->
+<section class="hero">
+  <div id="slider">
+    <img src="./asset/image/ampoule.jpg" alt="ampoule">
+    <img src="./asset/image/ampoule2.jpg" alt="ampoule2">
+    <img src="./asset/image/ampoule3.jpg" alt="ampoule3">
+  </div>
+
+  <div class="hero-overlay">
+    <h1>Commentaire</h1>
+    <p>Thierry Decramp - SECIC - Artisan électricien</p>
+    <p>Électricien depuis plus de 15 ans, spécialisé dans les nouvelles technologies et respectueux des normes.</p>
+    <a href="contact.php" class="btn">Contact</a>
+  </div>
+
+  <!-- Les points de navigation -->
+  <div class="hero-dots">
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+  </div>
+</section>
+
+ <!--Introduction -->
+    <section class="presentation">
+      <blockquote>"Que pensez-vous de nos services ?"</blockquote>
+    </section>
+
+  <!-- SECTION NOTE -->
+  <section class="contact">
+    <h2>Section Commentaire</h2>
+      <div class="contact-wrapper">
+        <div class="contact-form">
+           <form id="commentForm" action="#" method="post">
+                    <label for="nom">Nom (optionnel) :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                    
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    
+                    <label for="note">Note :</label>
+                    <div class="stars-container">
+                        <div class="stars" id="starRating">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                        <span class="rating-text" id="ratingText">Choisissez une note</span>
+                    </div>
+                    <input type="hidden" id="note-value" name="note" value="0">
+                    <span class="error-message" id="errorMessage">Veuillez sélectionner une note</span>
+                    
+                    <label for="commentaire">Commentaire :</label>
+                    <textarea id="commentaire" name="commentaire" required placeholder="Partagez votre expérience..."></textarea>
+                    
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+        </div>
+      </div>
+  </section>
+
+  <!-- SECTION TÉMOIGNAGES -->
+  <section 
+  class="prestations"
+  >
+    <h2>Section Témoignages</h2>
+
+    <!-- Témoignage 1 -->
+    <div class="prestation">
+      <p><span style="font-size:20px; color:gold;">★★★★★</span> 
+      <br>
+      <strong>10 mai 2024</strong><br>
+      “Très professionnel et rapide” – Client A</p>
+      <img src="./asset/image/exemple1.webp" alt="Exemple 1" style="width:180px; margin-top:10px; border-radius:5px;">
+    </div>
+
+    <!-- Témoignage 2 -->
+    <div class="prestation">
+      <p><span style="font-size:20px; color:gold;">★★★★★</span> 
+        <br>
+      <strong>25 avril 2024</strong><br>
+      “Travail soigné, devis clair” – Client B</p>
+      <img src="./asset/image/exemple1.webp" alt="Exemple 2" style="width:180px; margin-top:10px; border-radius:5px;">
+    </div>
+
+    <!-- Témoignage 3 -->
+    <div class="prestation">
+      <p><span style="font-size:20px; color:gold;">★★★★★</span> 
+        <br>
+      <strong>12 juin 2024</strong><br>
+      “Bonne communication, dépannage efficace” – Client C</p>
+      <img src="./asset/image/exemple1.webp" alt="Exemple 3" style="width:180px; margin-top:10px; border-radius:5px;">
+    </div>
+  </section>
+    </main>
+    <?php
+        include "./includes/footer.php";
+    ?>  
+>>>>>>> 53da9ef443ce151f752b5c154ab37ea74debb5df
     <script src="./asset/Js/jquery-3.7.1.min.js"></script>
     <script src="./asset/Js/script.js"></script>
 </body>

@@ -82,9 +82,12 @@
             commentaire TEXT,
             service_id INT UNSIGNED DEFAULT NULL,
             approved TINYINT(1) DEFAULT 0,
+<<<<<<< HEAD
             approve_token VARCHAR(64) DEFAULT NULL,
             delete_token VARCHAR(64) DEFAULT NULL,
             token_expires DATETIME DEFAULT NULL,
+=======
+>>>>>>> 53da9ef443ce151f752b5c154ab37ea74debb5df
             date_creation TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             CONSTRAINT `fk_comment_service` FOREIGN KEY (`service_id`) REFERENCES `services`(`id`) ON DELETE SET NULL
         ) CHARACTER SET utf8 COLLATE utf8_bin";
