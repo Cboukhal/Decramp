@@ -465,6 +465,7 @@ footer .sitemap {
   text-align: center;
   background-color: #e8f0ff;
   padding: 20px;
+  margin-top: 10px;
 }
 
 .presentation h3 {
@@ -823,7 +824,6 @@ button {
 button:hover
 {
   background: #0056b3;
-<<<<<<< HEAD
 }
 
 .alert
@@ -845,6 +845,4 @@ button:hover
   background-color: #f8d7da;
   color: #721c24;
   border: 1px solid #f5c6cb;
-=======
->>>>>>> 53da9ef443ce151f752b5c154ab37ea74debb5df
 }

@@ -51,6 +51,18 @@
     </p>
   </section>
 
+      <!-- ===================== GALERIE ===================== -->
+  <section class="gallery">
+    <div class="item"><img src="./asset/image/particuliers/20140307_171332.jpg" alt=""></div>
+    <div class="item"><img src="./asset/image/particuliers/20140314_161634.jpg" alt=""></div>
+    <div class="item"><img src="./asset/image/particuliers/20170713_161151.jpg" alt=""></div>
+    <div class="item"><img src="./asset/image/particuliers/20191209_130940.jpg" alt=""></div>
+    <div class="item"><img src="./asset/image/particuliers/20220323_182957.jpg" alt=""></div>
+    <div class="item"><img src="./asset/image/particuliers/20220711_100204.jpg" alt=""></div>
+    <div class="item"><img src="./asset/image/particuliers/IMG-20240710-WA0000.jpg" alt=""></div>
+    <div class="item"><img src="./asset/image/particuliers/P_20180417_121552.jpg" alt=""></div>
+  </section>
+
   <!-- ===================== PRESENTATION ===================== -->
   <section class="presentation">
     <h3>Notre engagement</h3>

@@ -4,7 +4,7 @@
       <a href="professionnels.php">Professionnels</a>
       <a href="particuliers.php">Particuliers</a>
       <a href="liens.php">Liens</a>
-      <a href="commentaire.php">Commentaire</a>
+      <a href="domotique.php">Domotique</a>
       <a href="contact.php">Contact</a>
     </div>
     <p>© SECIC 2025. Tous droits réservés.</p>
