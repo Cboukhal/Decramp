@@ -46,57 +46,72 @@
 
   <!--PARTICULIERS -->
     <section>
-        <h2>Particuliers</h2>
-        <div class="section-content">
-            <p>Mise en conformité installation, tableaux électriques, chauffage électrique, dépannages, domotique, alarme et contrôle d’accès...</p>
-            <div class="gallery">
-            <div class="item">
-                <img src="./asset/image/exemple1.webp" alt="Exemple 1">
-            </div>
-            <div class="item">
-                <img src="./asset/image/exemple2.jpg" alt="Exemple 2">
-            </div>
-            <div class="item">
-                <img src="./asset/image/ampoule2.jpg" alt="Exemple 3">
-            </div>
-            </div>
-            <br>
-            <a href="particuliers.php" class="btn">En savoir plus</a>
+    <h2>Particuliers</h2>
+      <div class="section-content">
+        <p>Mise en conformité installation, tableaux électriques, chauffage électrique, dépannages, domotique, alarme et contrôle d’accès...</p>
+        <div class="gallery">
+          <div class="item">
+            <img src="./asset/image/particuliers/20220323_182957.jpg" alt="Exemple 1">
+          </div>
+          <div class="item">
+            <img src="./asset/image/particuliers/20191209_130940.jpg" alt="Exemple 2">
+          </div>
+          <div class="item">
+            <img src="./asset/image/particuliers/20140314_161634.jpg" alt="Exemple 3">
+          </div>
         </div>
-    </section>
+        <br>
+        <a href="particuliers.php" class="btn">En savoir plus</a>
+      </div>
+  </section>
 
   <!--PROFESSIONNELS -->
     <section>
-        <h2>Professionnels</h2>
-        <div class="section-content">
-            <p>Réalisation de travaux suivant les rapports de conformité, câblages électriques et informatiques, maintenance machines outils, câblages pour automatismes, alimentations électriques, installations électriques dans les usines, appareils d’éclairage, ...</p>
-            <div class="gallery">
-            <div class="item">
-                <img src="./asset/image/exemple1.webp" alt="Exemple 1">
-                <p>Exemple 1</p>
-            </div>
-            <div class="item">
-                <img src="./asset/image/exemple2.jpg">
-                <p>Exemple 2</p>
-            </div>
-            <div class="item">
-                <img src="./asset/image/ampoule2.jpg" alt="Exemple 3">
-                <p>Exemple 3</p>
-            </div>
-            </div>
-            <br>
-            <a href="professionnels.php" class="btn">En savoir plus</a>
+    <h2>Professionnels</h2>
+      <div class="section-content">
+        <p>Réalisation de travaux suivant les rapports de conformité, câblages électriques et informatiques, maintenance machines outils, câblages pour automatismes, alimentations électriques, installations électriques dans les usines, appareils d’éclairage, ...</p>
+        <div class="gallery">
+          <div class="item">
+            <img src="./asset/image/photos tertiaire/126 De Gaulle (11).JPG" alt="Exemple 1">
+            <p>Exemple 1</p>
+          </div>
+          <div class="item">
+            <img src="./asset/image/photos tertiaire/20240628_193817.jpg" alt="Exemple 1">
+            <p>Exemple 2</p>
+          </div>
+          <div class="item">
+            <img src="./asset/image/photos tertiaire/20240809_174016.jpg" alt="Exemple 3">
+            <p>Exemple 3</p>
+          </div>
         </div>
-    </section>
+        <br>
+        <a href="professionnels.php" class="btn">En savoir plus</a>
+      </div>
+  </section>
 
-  <!--ÉVALUATION -->
+  <!--Domotique -->
     <section>
-        <h2>Évaluer nos services</h2>
-        <div class="section-content">
-        <p>"Besoin d’un électricien ? Obtenez votre devis" <br> Cliquez sur le bouton :</p>
-        <a href="commentaire.php" class="btn">Évaluer</a>
+    <h2>Domotique</h2>
+      <div class="section-content">
+        <p>Réalisation complète de vos installations domotiques : programmation d’automatismes, gestion intelligente de l’énergie, intégration de capteurs et pilotage centralisé.</p>
+        <div class="gallery">
+          <div class="item">
+            <img src="./asset/image/domotique/P_20171213_153435.jpg" alt="Exemple 1">
+            <p>Exemple 1</p>
+          </div>
+          <div class="item">
+            <img src="./asset/image/domotique/20240323_123545.jpg" alt="Exemple 1">
+            <p>Exemple 2</p>
+          </div>
+          <div class="item">
+            <img src="./asset/image/domotique/P_20171213_153435.jpg" alt="Exemple 3">
+            <p>Exemple 3</p>
+          </div>
         </div>
-    </section>
+        <br>
+        <a href="commentaire.php" class="btn">En savoir plus</a>
+      </div>
+  </section>
 
   <!--CONTACT -->
     <section>

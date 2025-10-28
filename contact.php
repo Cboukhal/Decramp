@@ -73,7 +73,7 @@
         $date = date('d/m/Y H:i:s');
 
         // Récupérer l'email admin
-        $adminEmail = 'adresse-de-secours@example.com';
+        $adminEmail = 'boukhalfa.camil@hotmail.fr';
         try
         {
             $stmt = $connexion->prepare("SELECT mail FROM admins WHERE role = 'admin' LIMIT 1");

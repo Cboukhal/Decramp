@@ -211,6 +211,7 @@
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
 function envoyerMail($objet, $destinataire, $contenu){
+    //ne pas utiliser gmail pour couurier indésirable
     //Load Composer's autoloader
     require_once 'vendor/autoload.php';
 
