@@ -42,20 +42,6 @@
     // --- RÉCUPÉRATION des services ---
     $services = $connexion->query("SELECT * FROM services ORDER BY date_creation DESC")->fetchAll(PDO::FETCH_ASSOC);
 
-    // -----------------------------------Contact-----------------------------------//
-    $contacts = $connexion->query("SELECT * FROM contact ORDER BY date_creation DESC")->fetchAll(PDO::FETCH_ASSOC);
-
-    // -----------------------------------Commentaire-----------------------------------//
-    $contacts = $connexion->query("SELECT * FROM commentaire ORDER BY date_creation DESC")->fetchAll(PDO::FETCH_ASSOC);
-
-    // -----------------------------------Partenaire-----------------------------------//
-    $contacts = $connexion->query("SELECT * FROM partenaire ORDER BY date_creation DESC")->fetchAll(PDO::FETCH_ASSOC);
-
-    // -----------------------------------Requete_Devis-----------------------------------//
-    $contacts = $connexion->query("SELECT * FROM requete_devis ORDER BY date_creation DESC")->fetchAll(PDO::FETCH_ASSOC);
-    
-
-
 
 ?>
 <!------------------------------------------------------------------------------>
