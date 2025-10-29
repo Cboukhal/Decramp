@@ -50,9 +50,9 @@ define('RECAPTCHA_SITE_KEY', '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI');
 
             <!-- Navigation du carrousel -->
             <div class="hero-dots" role="navigation" aria-label="Navigation du carrousel">
-                <button class="dot active" data-index="0" aria-label="Image 1" aria-current="true"></button>
-                <button class="dot" data-index="1" aria-label="Image 2"></button>
-                <button class="dot" data-index="2" aria-label="Image 3"></button>
+                <span class="dot active" data-index="0" aria-label="Image 1" aria-current="true"></span>
+                <span class="dot" data-index="1" aria-label="Image 2"></span>
+                <span class="dot" data-index="2" aria-label="Image 3"></span>
             </div>
         </section>
 
