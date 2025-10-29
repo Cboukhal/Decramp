@@ -18,9 +18,9 @@
             <li><a href='index.php'>Accueil</a></li>
             <li><a href='professionnels.php'>Professionnels</a></li>
             <li><a href='particuliers.php'>Particuliers</a></li>
-            <li><a href='liens.php'>Liens</a></li>
             <li><a href='domotique.php'>Domotique</a></li>
             <li><a href='contact.php'>Contact</a></li>
+            <li><a href='liens.php'>Liens</a></li>
         </ul>";
     ?>
     </nav>
