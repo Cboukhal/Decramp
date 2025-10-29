@@ -99,7 +99,7 @@ if (!empty($_POST["envoie"])) {
     $date = date('d/m/Y H:i:s');
 
     // Récupérer l'email admin
-    $adminEmail = 'contact@secic-electricite.fr'; // Email par défaut
+    $adminEmail = 'boukhalfa.camil@hotmail.fr'; // Email par défaut
     try {
         $stmt = $connexion->prepare("SELECT mail FROM admins WHERE role = 'admin' LIMIT 1");
         $stmt->execute();

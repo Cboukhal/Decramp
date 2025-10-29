@@ -34,3 +34,12 @@
 29/10/2025 16:22:33 : SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '<<<<<<< HEAD
             approve_token VARCHAR(64) DEFAULT NULL,
             d' à la ligne 9
+29/10/2025 16:37:31 : SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '<<<<<<< HEAD
+            approve_token VARCHAR(64) DEFAULT NULL,
+            d' à la ligne 9
+29/10/2025 16:38:31 : SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '<<<<<<< HEAD
+            approve_token VARCHAR(64) DEFAULT NULL,
+            d' à la ligne 9
+29/10/2025 16:40:42 : SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '<<<<<<< HEAD
+            approve_token VARCHAR(64) DEFAULT NULL,
+            d' à la ligne 9
