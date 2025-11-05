@@ -225,6 +225,7 @@ section h2 {
   font-weight: 500;
   transition: 0.3s;
   text-align: center;
+  margin-top: 10px;
 }
 
 .btn:hover {
@@ -465,6 +466,7 @@ footer .sitemap {
   text-align: center;
   background-color: #e8f0ff;
   padding: 20px;
+  margin-top: 10px;
 }
 
 .presentation h3 {
@@ -504,20 +506,29 @@ footer .sitemap {
   background-color: #F5F5F5;
   max-width: 900px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* ✅ centre ton h4 au milieu */
 }
 
 .prestation h4 {
   background-color: #0a2e6b;
   color: white;
-  padding: 8px 10px;
   font-size: 18px;
   border-radius: 4px;
+  width: 50%;
+  text-align: center; /* ✅ centre le texte à l’intérieur */
+  padding: 5px;       /* optionnel pour un meilleur rendu */
 }
 
+/* ✅ Liste alignée à gauche */
 .prestation ul {
-  list-style-type: disc;
-  margin: 10px 30px;
-  
+  margin: 10px 0 10px 40px;  /* espace à gauche */
+  text-align: left; /* ✅ force le texte à gauche */
+  list-style-position: outside; /* les puces à l'extérieur */
+  list-style: none;
+  width: 50%;
 }
 
 .prestation li {
@@ -823,7 +834,6 @@ button {
 button:hover
 {
   background: #0056b3;
-<<<<<<< HEAD
 }
 
 .alert
@@ -845,6 +855,4 @@ button:hover
   background-color: #f8d7da;
   color: #721c24;
   border: 1px solid #f5c6cb;
-=======
->>>>>>> 53da9ef443ce151f752b5c154ab37ea74debb5df
 }
